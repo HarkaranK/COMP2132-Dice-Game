@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+$color_1: white;
+$color_2: black;
+$background-color_1: wheat;
+$background-color_2: rgb(166, 103, 226);
+$background-color_3: rgb(76, 215, 120);
+$background-color_4: black;
+$background-color_5: orange;
+$background-color_6: peru;
+$background-color_7: #FEFFC2;
+$background-color_8: gray;
+$background-color_9: rgb(240, 83, 83);
+
+/* Main Container */
+/* Player */
+/* Wrappers for both */
+/* Dice */
+/* CPU */
+/* Buttons */
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	padding: 3%;
+}
+body {
+	background-color: $background-color_1;
+	padding: 0%;
+	margin: 0%;
+}
+h1 {
+	background-color: $background-color_2;
+	padding: 3%;
+}
+.player {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $background-color_3;
+	width: 50%;
+	margin-right: 2%;
+}
+.player_dice {
+	color: $color_1;
+	background-color: $background-color_4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 74%;
+}
+.player_score {
+	color: $color_1;
+	background-color: $background-color_4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 74%;
+	margin-top: 4%;
+}
+.dice1 {
+	background-color: $background-color_1;
+	color: $color_2;
+	width: 251px;
+	height: 300px;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.dice2 {
+	background-color: $background-color_1;
+	color: $color_2;
+	width: 251px;
+	height: 300px;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.diceWrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0%;
+	padding: 0%;
+}
+.score2 {
+	background-color: $background-color_1;
+	color: $color_2;
+	width: 251px;
+	height: 300px;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.score1 {
+	background-color: $background-color_1;
+	color: $color_2;
+	width: 251px;
+	height: 300px;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.scoreWrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0%;
+	padding: 0%;
+}
+.spacer {
+	margin-bottom: 3%;
+}
+.cpu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $background-color_5;
+	width: 50%;
+	margin-right: 2%;
+}
+.cpu_dice {
+	color: $color_1;
+	background-color: $background-color_4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 74%;
+}
+.cpu_score {
+	color: $color_1;
+	background-color: $background-color_4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 74%;
+	margin-top: 4%;
+}
+#roll {
+	background-color: $background-color_6;
+	border: black 3px solid;
+	margin-left: 45%;
+	padding: 3%;
+	margin-bottom: 3%;
+}
+#p_d1 {
+	display: none;
+	border: 3px solid black;
+	width: 30%;
+}
+#p_d2 {
+	display: none;
+	border: 3px solid black;
+	width: 30%;
+}
+#c_d1 {
+	display: none;
+	border: 3px solid black;
+	width: 30%;
+}
+#c_d2 {
+	display: none;
+	border: 3px solid black;
+	width: 30%;
+}
+#popup {
+	opacity: 0;
+	background-color: $background-color_7;
+	border: 3px solid black;
+	height: 200px;
+	width: 215px;
+	margin-left: 42%;
+	position: fixed;
+}
+#close {
+	margin-left: 89%;
+	background-color: $background-color_8;
+}
+#popupText {
+	padding: 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#desc {
+	padding: 3%;
+}
+footer {
+	background-color: $background-color_9;
+	padding: 2%;
+	border-top: 3px solid black;
+	bottom: 0%;
+	left: 0%;
+	width: 96%;
+}

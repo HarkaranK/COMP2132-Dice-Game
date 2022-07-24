@@ -1,0 +1,131 @@
+<html lang="en">
+    <head>
+        <!-- Author: Harkaran Kang-->
+        <title>Dice Game</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="JS/index.js" type="text/javascript" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer=""></script>
+        <script src="https://kit.fontawesome.com/7bd33cd057.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Dice Game</h1>
+        </header>
+        <main>
+            <section id="popup">
+                <button id="close">X</button>
+                <p id="popupText">Test</p>
+                <p id="desc">Please press the X button to close and continue playing</p>
+            </section>
+
+            <div id="infor">
+                <button id="break">X</button>
+                <p id="rollsper"></p>
+            </div>
+
+
+            <div class="wrapper">
+
+
+                <!-- Player -->
+                <div class="player">
+                    <h2>You</h2>
+
+                    <!-- Player Dice -->
+                    <div class="player_dice">
+                        <h3>Your Dice</h3>
+                        <!-- Container for dice -->
+                        <div class="diceWrap">
+                            <!-- Die 1 -->
+                            <div class="dice1">
+                                <h4>Dice#1</h4>
+                                <!-- <p id="p_d1"> </p> -->
+                                <img id="p_d1" src="" alt="">
+                            </div>
+                            <!-- Die 2 -->
+                            <div class="dice2">
+                                <h4>Dice#2</h4>
+                                <!-- <p id="p_d2"> </p> -->
+                                <img id="p_d2" src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="player_score">
+                        <h3>Your Score</h3>
+                        <div class="scoreWrap">
+                            <!-- Score 1 -->
+                            <div class="score1">
+                                <h4>Score This Round</h4>
+                                <p id="p_s1"> </p>
+                            </div>
+                            <!-- Score 2 -->
+                            <div class="score2">
+                                <h4>Total Score</h4>
+                                <p id="p_s2"> </p>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <!-- Class to add spacing at the bottom -->
+                    <div class="spacer"></div>
+                </div>
+
+                
+
+                <!-- CPU -->
+                <div class="cpu">
+                    <h2>Computer</h2>
+
+                    <!-- Player Dice -->
+                    <div class="cpu_dice">
+                        <h3>Computer Dice</h3>
+                        <!-- Container for dice -->
+                        <div class="diceWrap">
+                            <!-- Die 1 -->
+                            <div class="dice1">
+                                <h4>Dice#1</h4>
+                                <!-- <p id="c_d1"></p> -->
+                                <img id="c_d1" src="" alt="">
+                                
+                            </div>
+                            <!-- Die 2 -->
+                            <div class="dice2">
+                                <h4>Dice#2</h4>
+                                <img id="c_d2" src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cpu_score">
+                        <h3>Computer Score</h3>
+                        <div class="scoreWrap">
+                            <!-- Score 1 -->
+                            <div class="score1">
+                                <h4>Score This Round</h4>
+                                <p id="c_s1"></p>
+                            </div>
+                            <!-- Score 2 -->
+                            <div class="score2">
+                                <h4>Total Score</h4>
+                                <p id="c_s2"></p>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <!-- Class to add spacing at the bottom -->
+                    <div class="spacer"></div>
+                </div>   
+            </div>
+                <!-- Buttons -->
+            <button id="roll">Roll</button>
+            <button id="chart">Show Chart</button>
+        </main>
+        <footer>    
+            <h2>COMP 2132</h2>    
+        </footer>
+    </body>
+</html>
